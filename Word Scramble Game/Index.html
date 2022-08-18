@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="Style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Scramble</title>
+    <script src="js/word.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <h2>Guss The Word</h2>
-        
+        <h2>Guess The Word</h2>
+        <div class="content">
+            <p class="Word"></p>
+            <div class="info">
+                <p class="hint">Hint: this is a thing</p>
+                <p class="time">Time Left: <b>30</b>s</p>
+            </div>
+            <input type="text" placeholder="Enter the word">
+            <div class="btns">
+                <button class="New-word">New word</button>
+                <button class="submit">Submit</button>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
