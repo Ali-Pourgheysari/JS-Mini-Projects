@@ -8,20 +8,20 @@
     <title>World Scramble</title>
     <script src="js/word.js" defer></script>
     <script src="js/script.js" defer></script>
-</head>
+    </head>
 <body>
     <div class="container">
         <h2>Guess The Word</h2>
         <div class="content">
             <p class="Word"></p>
             <div class="info">
-                <p class="hint">Hint: this is a thing</p>
-                <p class="time">Time Left: <b>30</b>s</p>
+                <p class="hint"></p>
+                <p class="time">Time left: <b>30</b>s</p>
             </div>
-            <input type="text" placeholder="Enter the word">
+            <input class="txt" type="text" placeholder="Enter the word">
             <div class="btns">
-                <button class="New-word">New word</button>
-                <button class="submit">Submit</button>
+                <button onclick="initGame()" class="New-word">New word</button>
+                <button onclick="submit()" class="submit">Submit</button>
             </div>
         </div>
     </div>
