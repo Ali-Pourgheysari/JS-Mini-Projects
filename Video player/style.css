@@ -6,3 +6,27 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background:  rgb(243, 224, 242);
+}
+.wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.container {
+    max-width: 900px;
+    width: 98%;
+    background: black;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.container video {
+    width: 100%;
+}
