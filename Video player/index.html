@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container show-controls">
         <div class="wrapper">
             <div class="video-timeline">
                 <div class="progress-area">
@@ -22,7 +23,7 @@
             <ul class="video-controls">
                 <li class="options left">
                     <button class="volume"><i class="fa-solid fa-volume-high"></i></button>
-                    <input type="range" min="0" max="1" step="any">
+                    <input type="range" min="0" max="1" step="any" style="cursor: pointer;">
                     <div class="video-timer">
                         <p class="current-time">00:00</p>
                         <p class="separator"> / </p>
@@ -38,11 +39,11 @@
                     <div class="playback-content">
                         <button class="playback-speed"><span class="material-symbols-rounded">slow_motion_video</span></button>
                         <ul class="speed-options">
-                            <li>2x</li>
-                            <li>1.5x</li>
-                            <li class="active">Normal</li>
-                            <li>0.75x</li>
-                            <li>0.5x</li>
+                            <li data-speed="2">2x</li>
+                            <li data-speed="1.5">1.5x</li>
+                            <li data-speed="1" class="active">Normal</li>
+                            <li data-speed="0.75">0.75x</li>
+                            <li data-speed="0.5">0.5x</li>
                         </ul>
                     </div>
                     <button class="pic-in-pic"><span class="material-icons">picture_in_picture_alt</span></button>
@@ -50,8 +51,9 @@
                 </li>
             </ul>
         </div>
-        <video src="Wildlife Windows 7 Sample Video.mp4"></video>
+        <video >
+            <source src="./Wildlife.mp4" type="video/mp4">
+        </video>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
